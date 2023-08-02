@@ -35,7 +35,7 @@ function Home2() {
               </i>{" "}
               and also in areas related to{" "}
               <i>
-                <b className="purple">AI & Cloud chain.</b>
+                <b className="purple">AI & Cloud supply chain.</b>
               </i>
               <br />
               <br />
