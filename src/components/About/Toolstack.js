@@ -2,11 +2,21 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
   SiSlack,
   SiVercel,
   SiMacos,
+  SiRemix,
 } from "react-icons/si";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiJava,
+} from "react-icons/di";
+import { TbBrandGolang, TbCurrencyEthereum } from "react-icons/tb";
 
 function Toolstack() {
   return (
@@ -18,7 +28,7 @@ function Toolstack() {
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <SiRemix />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSlack />

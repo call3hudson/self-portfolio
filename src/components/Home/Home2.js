@@ -1,13 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn, FaGoogle, FaTelegram } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,42 +15,50 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a <b className="purple"> senior blockchain developer </b>
+              with over 7 years of experience, specializing in DeFi engineering
               <br />
-              <br />I am fluent in classics like
+              <br />I have contributed to several DeFi protocols, including
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Synthetix, dYdX, and district0x </b>
+              </i>
+              <br />
+              <br />I am a master of these:
+              <i>
+                <b className="purple"> C++, Solidity, Rust and Typescript. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are building new
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">Decentralized Finance </b>
+              </i>{" "}
+              and also in areas related to{" "}
+              <i>
+                <b className="purple">AI & Cloud chain.</b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Whenever possible, I also apply my passion for developing
+              decentralized application with <b className="purple">
+                Solidity
+              </b>{" "}
+              on
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> Ethereum, Arbitrum and Polygon</b>
               </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                width="300"
+                height="300"
+                style={{ border: 50 }}
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -67,7 +71,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/call3hudson"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +81,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://linkedin.com/in/colton-huang/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +91,32 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://twitter.com/@junjie3926"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:call3hudson@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaGoogle />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://t.me/call3hudson"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <FaTelegram />
                 </a>
               </li>
             </ul>

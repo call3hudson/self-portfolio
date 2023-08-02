@@ -1,6 +1,9 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { CgGitFork } from "react-icons/cg";
+import { AiFillStar } from "react-icons/ai";
 
 function Github() {
   return (
@@ -9,12 +12,26 @@ function Github() {
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
-        username="soumyajit4419"
-        blockSize={15}
-        blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
+        username="call3hudson"
+        blockSize={6}
+        blockMargin={10}
+        color="transparent"
+        fontSize={12}
       />
+      <div>
+        <Button
+          href="https://github.com/call3hudson?tab=repositories"
+          target="_blank"
+          className="fork-btn-inner"
+          style={{
+            width: 250,
+          }}
+        >
+          <CgGitFork style={{ fontSize: "1.2em" }} />
+          {" Give me some "}
+          <AiFillStar style={{ fontSize: "1.1em" }} />
+        </Button>
+      </div>
     </Row>
   );
 }
